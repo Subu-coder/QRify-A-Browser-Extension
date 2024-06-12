@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            width: 250px;
+            height: 250px;
+            font-family: Open Sans, sans-serif;
+            text-align: center;
+            background-color: #F7F7F7;
+            /* Light gray background */
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+            font-family: monospace;
+        }
+
+        .qr-code-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            background-color: #FFFFFF;
+            /* White background */
+        }
+
+        .tab-select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .tab-select option {
+            padding: 10px;
+            font-size: 16px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .tab-select option:selected {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .qr-code {
+            border-radius: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>QRify</h1>
+    <div class="qr-code-container">
+        <select class="tab-select" id="tab-select">
+            <!-- <option value="">Select a tab</option> -->
+        </select>
+        <div id="qr-code" class="qr-code"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html>

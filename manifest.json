@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "QR Code Generator",
+    "version": "1.0.0",
+    "description": "Generate a QR code for the all tabs in one click and scan from another device to access the site without sharing the urls",
+    "short_description": "Generate QR codes for your tabs in one click!",
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "<all_urls>"
+    ],
+    "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
